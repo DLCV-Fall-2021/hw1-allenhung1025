@@ -45,7 +45,7 @@ if __name__ == "__main__":
     opt = parser.parse_args()
     print(opt)
 
-    os.makedirs(opt.output_dir, exist_ok=True)
+    #os.makedirs(opt.output_dir, exist_ok=True)
 
     transforms_ = [transforms.ToTensor(),
                    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]

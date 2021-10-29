@@ -23,7 +23,7 @@ import torch.nn.functional as F
 import torch
 
 import matplotlib.pyplot as plt
-from tqdm import tqdm
+#from tqdm import tqdm
 
 def mean_iou_score(pred, labels):
     '''
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     elif opt.scheduler_name == "ReduceLROnPlateau":
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min")
 
-    for ep in tqdm(range(opt.n_epochs)):
+    for ep in range(opt.n_epochs):
 
         loss = 0.0
         train_acc = 0.0
