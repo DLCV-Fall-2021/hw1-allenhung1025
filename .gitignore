@@ -6,3 +6,5 @@ hw1_data/*
 *jpg
 output/*
 p2/checkpoint_*
+__pycache__/*
+p2/__pycache__/*
