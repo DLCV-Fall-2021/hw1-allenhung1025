@@ -23,7 +23,7 @@ import torch.nn.functional as F
 import torch
 
 import matplotlib.pyplot as plt
-from tqdm import tqdm
+#from tqdm import tqdm
 
 
 if __name__ == "__main__":
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     #Learning rate scheduler
     scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[30, 80], gamma = 0.5)
 
-    for ep in tqdm(range(opt.n_epochs)):
+    for ep in range(opt.n_epochs):
 
         loss = 0.0
         train_acc = 0.0
