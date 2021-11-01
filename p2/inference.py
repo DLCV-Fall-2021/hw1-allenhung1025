@@ -77,7 +77,7 @@ if __name__ == "__main__":
         predicted_img = decode_label(predicted_class)
 
         #write to file
-        output_path = os.path.join(os.path.join(opt.output_dir, f"{name}.png"))
+        output_path = os.path.join(opt.output_dir, f"{name}.png")
         save_image(predicted_img, output_path)
 
 print(f"save to {opt.output_dir}")
